@@ -44,7 +44,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
 }
-.profile .frame img {
+.profile .frame .img {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,7 +66,35 @@ body {
     font-size: 0.8em;
     font-weight: 300;
 }
-
+.contact {
+    padding-top: 40px;
+}
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact ul {
+    position: relative;
+}
+.contact ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4
+}
+.contact ul li span {
+    color: #fff;
+    font-weight: 300;
+}
 .container .right {
     position: relative;
     background-color: #fff;

@@ -14,6 +14,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
@@ -22,13 +23,8 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.left {
-    flex: 1;
-    padding: 20px;
-}
-
+.left,
 .right {
-    flex: 2;
     padding: 20px;
 }
 
@@ -85,7 +81,8 @@ body {
     color: #333;
 }
 
-.contact .text, .contact a {
+.contact .text,
+.contact a {
     font-size: 16px;
     color: #333;
     text-decoration: none;
@@ -140,7 +137,7 @@ body {
     text-decoration: none;
     margin-bottom: 5px;
     transition: color 0.3s ease;
-    margin-left: 2rem;
+    display: block;
 }
 
 .info-section a:hover {
@@ -150,4 +147,30 @@ body {
 
 .info-section a:visited {
     color: #555;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left,
+    .right {
+        padding: 20px;
+    }
+
+    .left {
+        flex: 1;
+    }
+
+    .right {
+        flex: 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .info-section a {
+        margin-left: 0;
+    }
 }

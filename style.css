@@ -1,27 +1,13 @@
+/* Global styles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "SamsungOne 400";
-}
-
-@font-face {
-    font-family: "Samsung Sharp Sans Bold";
-    src: url(./samsungone-webfont/SamsungSharpSans-Bold.woff);
-}
-
-@font-face {
-    font-family: "SamsungOne 400";
-    src: url(./samsungone-webfont/SamsungOne-400.woff);
-}
-
-@font-face {
-    font-family: "SamsungOne 700";
-    src: url(./samsungone-webfont/SamsungOne-700.woff);
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #f4f4f9;
+    background-color: #e4dad0;
     color: #333;
     line-height: 1.6;
 }
@@ -31,7 +17,7 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
+    background: #e7e5db;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -66,19 +52,23 @@ body {
 
 .profile h2 {
     font-size: 24px;
-    font-family: "SamsungOne 700";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .profile h2 span {
     display: block;
     font-size: 18px;
-    font-family: "SamsungOne 400";
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .contact .title {
     font-size: 20px;
+    margin-top: 2rem;
     margin-bottom: 10px;
-    font-family: "SamsungOne 700";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .contact ul {
@@ -108,11 +98,56 @@ body {
 .info-section h3 {
     font-size: 22px;
     margin-bottom: 10px;
-    font-family: "SamsungOne 700";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .info-section p {
     font-size: 16px;
-    font-family: "SamsungOne 400";
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     line-height: 1.6;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 2rem;
+}
+
+.info-section li {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.info-section li span {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-section li br {
+    margin-bottom: 5px;
+}
+
+.info-section a {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #301300;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    margin-left: 2rem;
+}
+
+.info-section a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.info-section a:visited {
+    color: #555;
 }
